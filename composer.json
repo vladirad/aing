@@ -1,0 +1,27 @@
+{
+  "name": "abacusplus/ai-nickname-generator",
+  "description": "Generate nicknames using ChatGPT",
+  "type": "plugin",
+  "require": {
+    "openai-php/client": "^0.7.4",
+    "symfony/http-client": "^6.3",
+    "nyholm/psr7": "^1.8",
+    "consoletvs/profanity": "^3.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "AbacusPlus\\AiNicknameGenerator\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Vladimir Radisic",
+      "email": "vladimir@devstetic.com"
+    }
+  ],
+  "config": {
+    "allow-plugins": {
+      "php-http/discovery": true
+    }
+  }
+}

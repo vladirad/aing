@@ -1,0 +1,556 @@
+[
+    {
+        "key": "group_654b2819c41fe",
+        "title": "Nickname Form Builder",
+        "fields": [
+            {
+                "key": "field_654b29c16b5e7",
+                "label": "Form items",
+                "name": "form_items",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "row",
+                "pagination": 0,
+                "min": 0,
+                "max": 0,
+                "collapsed": "",
+                "button_label": "Add Row",
+                "rows_per_page": 20,
+                "sub_fields": [
+                    {
+                        "key": "field_654b29c86b5e8",
+                        "label": "Input type",
+                        "name": "input_type",
+                        "aria-label": "",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "inputText": "Text Input",
+                            "inputNumber": "Number Input",
+                            "select": "Select",
+                            "hidden": "Hidden Input"
+                        },
+                        "default_value": false,
+                        "return_format": "value",
+                        "multiple": 0,
+                        "allow_null": 0,
+                        "ui": 0,
+                        "ajax": 0,
+                        "placeholder": "",
+                        "parent_repeater": "field_654b29c16b5e7"
+                    },
+                    {
+                        "key": "field_654b2a334c988",
+                        "label": "Label",
+                        "name": "label",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_654b29c16b5e7"
+                    },
+                    {
+                        "key": "field_654d3a1633b1b",
+                        "label": "Placeholder",
+                        "name": "placeholder",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_654b29c16b5e7"
+                    },
+                    {
+                        "key": "field_6550aaaa8afe9",
+                        "label": "Required",
+                        "name": "required",
+                        "aria-label": "",
+                        "type": "true_false",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "message": "",
+                        "default_value": 0,
+                        "ui": 0,
+                        "ui_on_text": "",
+                        "ui_off_text": "",
+                        "parent_repeater": "field_654b29c16b5e7"
+                    },
+                    {
+                        "key": "field_654b2a62ac8e6",
+                        "label": "ChatGPT prompt",
+                        "name": "chatgpt_prompt",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "Keep it as short as possible.<br \/>\r\nExample: \"Full name\", \"Person likes\" etc...<br \/>\r\nFor a personalized touch, use \"%s\" to represent the user's input, like in \"Person likes %s music.\"<br \/><br \/>\r\nAfter this ChatGPT prompt will look something like:<br \/>\r\nGenerate 50 unique nicknames for params: Full Name: John Doe,  Person likes Rock music...",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_654b29c16b5e7"
+                    },
+                    {
+                        "key": "field_654b2c2392f48",
+                        "label": "Options",
+                        "name": "options",
+                        "aria-label": "",
+                        "type": "repeater",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_654b29c86b5e8",
+                                    "operator": "==",
+                                    "value": "select"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "layout": "table",
+                        "min": 1,
+                        "max": 0,
+                        "collapsed": "",
+                        "button_label": "Add Row",
+                        "rows_per_page": 20,
+                        "parent_repeater": "field_654b29c16b5e7",
+                        "sub_fields": [
+                            {
+                                "key": "field_654b2c3392f49",
+                                "label": "Label",
+                                "name": "label",
+                                "aria-label": "",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "maxlength": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "parent_repeater": "field_654b2c2392f48"
+                            },
+                            {
+                                "key": "field_654b2c4392f4a",
+                                "label": "Value",
+                                "name": "value",
+                                "aria-label": "",
+                                "type": "text",
+                                "instructions": "If empty `Label` will be used",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "maxlength": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "parent_repeater": "field_654b2c2392f48"
+                            }
+                        ]
+                    },
+                    {
+                        "key": "field_654b3fe6212a3",
+                        "label": "HTML Elements Input",
+                        "name": "html_elements_input",
+                        "aria-label": "",
+                        "type": "group",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_654b29c86b5e8",
+                                    "operator": "!=",
+                                    "value": "select"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "layout": "row",
+                        "parent_repeater": "field_654b29c16b5e7",
+                        "sub_fields": [
+                            {
+                                "key": "field_654d4ca91478e",
+                                "label": "HTML Elements",
+                                "name": "html_elements",
+                                "aria-label": "",
+                                "type": "clone",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "clone": [
+                                    "field_654d2ef6386e4",
+                                    "field_654d2f03386e5"
+                                ],
+                                "display": "seamless",
+                                "layout": "block",
+                                "prefix_label": 0,
+                                "prefix_name": 0
+                            }
+                        ]
+                    },
+                    {
+                        "key": "field_654d4cbefab79",
+                        "label": "HTML Elements Select",
+                        "name": "html_elements_select",
+                        "aria-label": "",
+                        "type": "group",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_654b29c86b5e8",
+                                    "operator": "==",
+                                    "value": "select"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "layout": "row",
+                        "parent_repeater": "field_654b29c16b5e7",
+                        "sub_fields": [
+                            {
+                                "key": "field_654d4cc9fab7a",
+                                "label": "HTML Elements",
+                                "name": "html_elements",
+                                "aria-label": "",
+                                "type": "clone",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "clone": [
+                                    "field_654d2f0a386e6",
+                                    "field_654d2f11386e7"
+                                ],
+                                "display": "seamless",
+                                "layout": "block",
+                                "prefix_label": 0,
+                                "prefix_name": 0
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "field_6550aa7d8afe8",
+                "label": "Generator type",
+                "name": "generator_type",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "Example:<br \/>\r\nRapper nicknames",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": 50,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_654d4bb54127f",
+                "label": "HTML Elements",
+                "name": "html_elements",
+                "aria-label": "",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "key": "field_654d4bc341280",
+                        "label": "HTML Elements",
+                        "name": "html_elements",
+                        "aria-label": "",
+                        "type": "clone",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "clone": [
+                            "field_654d2eed386e3",
+                            "field_654d5239145e3",
+                            "field_654d3b1966394"
+                        ],
+                        "display": "seamless",
+                        "layout": "block",
+                        "prefix_label": 0,
+                        "prefix_name": 0
+                    }
+                ]
+            },
+            {
+                "key": "field_65a56353eabef",
+                "label": "Presets Type",
+                "name": "presets_type",
+                "aria-label": "",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "none": "None",
+                    "repeater": "Repeater",
+                    "textarea": "Textarea"
+                },
+                "default_value": "repeater",
+                "return_format": "value",
+                "multiple": 0,
+                "allow_null": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_65686a22d3eb7",
+                "label": "Presets",
+                "name": "presets",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_65a56353eabef",
+                            "operator": "==",
+                            "value": "repeater"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "table",
+                "pagination": 0,
+                "min": 0,
+                "max": 0,
+                "collapsed": "",
+                "button_label": "Add Row",
+                "rows_per_page": 20,
+                "sub_fields": [
+                    {
+                        "key": "field_65686a38d3eb8",
+                        "label": "Nickname",
+                        "name": "nickname",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_65686a22d3eb7"
+                    }
+                ]
+            },
+            {
+                "key": "field_65a5638829ce2",
+                "label": "Presets",
+                "name": "presets_textarea",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "Every item should be on a new line",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_65a56353eabef",
+                            "operator": "==",
+                            "value": "textarea"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "rows": "",
+                "placeholder": "",
+                "new_lines": ""
+            },
+            {
+                "key": "field_65a565d1f4dbe",
+                "label": "Turn off AI",
+                "name": "turn_off_ai",
+                "aria-label": "",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0,
+                "ui_on_text": "",
+                "ui_off_text": "",
+                "ui": 1
+            },
+            {
+                "key": "field_65a688fd6d2f0",
+                "label": "Show Title",
+                "name": "show_title",
+                "aria-label": "",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "false": "Don't show Title",
+                    "h1": "Show as H1",
+                    "h2": "Show as H2",
+                    "h3": "Show as H3",
+                    "h4": "Show as H4"
+                },
+                "default_value": "false",
+                "return_format": "value",
+                "multiple": 0,
+                "allow_null": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "ai_nickname"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    }
+]

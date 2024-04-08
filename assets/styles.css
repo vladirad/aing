@@ -1,0 +1,50 @@
+.ai-nickname-form.is-loading {
+    opacity: 0.8;
+    pointer-events: none;
+}
+
+.ai-nickname-form-wrapper button.is-loading {
+    color: transparent !important;
+    pointer-events: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    position: relative;
+}
+
+.ai-nickname-form-wrapper button.is-loading::after {
+    content: "";
+    position: absolute;
+    left: calc(50% - (1em * .5));
+    top: calc(50% - (1em * .5));
+    animation: spinAround .5s infinite linear;
+    border: 2px solid #c62641;
+    border-color: var(--loadingBorder);
+    border-radius: 9999px;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    display: block;
+    height: 1em;
+    width: 1em;
+}
+
+.ai-nickname-results .nickname {
+    height: auto;
+}
+
+.ai-nickname-results .nickname h2 {
+    margin: 0
+}
+
+.ai-nickname-results .nickname-title {
+    padding-right: 26px;
+}
+
+@keyframes spinAround {
+    from {
+        transform: rotate(0)
+    }
+
+    to {
+        transform: rotate(359deg)
+    }
+}

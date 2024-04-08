@@ -1,0 +1,16 @@
+.ai-nicknames-table th,
+.ai-nicknames-table td {
+    text-align: left;
+    padding: 10px;
+}
+
+@media (min-width: 1024px) {
+    .ai-nicknames-table .date {
+        white-space: nowrap;
+        width: 15%;
+    }
+
+    .ai-nicknames-table .params {
+        width: 20%;
+    }
+}
